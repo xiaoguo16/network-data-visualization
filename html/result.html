@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../javascripts/echarts.common.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../icon/style.css">
+    <title>搜索结果</title>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">数据类型选择</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a id="HTTPli" href="#">HTTP</a></li>
+                <li><a id="DNSli" href="#">DNS</a></li>
+                <li><a id="IPli" href="#">IP五元组</a></li>
+                <li><a id="Emailli" href="#">邮件</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li><a id="ipDistribute" href="worldMap.html" target="_blank">IP分布</a></li>
+                <li><a id="corIndex" href="correlation.html" target="_blank">关联分析</a></li>
+                <li><a id="backSearch" href="index.html" target="_blank">返回主页</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="curCondition">
+    <span>历史检索条件（选中的为当前条件）：</span>
+    <form class="curForm">
+        <!--192.343.3.3<input type="checkbox" checked="">-->
+        <!--342.234.32.2<input type="checkbox" checked="checked">-->
+    </form>
+    <button class="curBtn">搜索</button>
+</div>
+<div id="suggest">
+    <ul id="suggestUl">
+        <li id="search_result"><input type="text" name="suggestContent" placeholder="在结果中搜索" id="ipt">
+            <button id="suggestButton" > <span class="icon-search"></span></button></li>
+    </ul>
+    <ul id="suggestEmail">
+        <li id="search_resultEmail"><input type="text" name="suggestContent" placeholder="在结果中搜索" id="iptEmail">
+            <button id="suggestButtonEmail" > <span class="icon-search"></span></button></li>
+    </ul>
+</div>
+<div id="httpResult">
+    <div class="dataDiv">
+        <div class="tableDiv"></div>
+        <div class="pages" style="margin-top:5px;margin-bottom:10px;float: right;">
+            <ul class="pagination" style="margin: 0">
+            </ul>
+        </div>
+    </div>
+    <div class="visDiv"></div>
+</div>
+<div id="dnsResult">
+    <div class="dataDiv">
+        <div class="tableDiv"></div>
+        <div class="pages" style="margin-top:5px;margin-bottom:10px;float: right;">
+            <ul class="pagination" style="margin: 0"></ul>
+        </div>
+    </div>
+    <div class="visDiv"></div>
+</div>
+<div id="IPfiveResult">
+    <div class="dataDiv">
+        <div class="tableDiv"></div>
+        <div class="pages" style="margin-top:5px;margin-bottom:10px;float: right;">
+            <ul class="pagination" style="margin: 0">
+            </ul>
+        </div>
+    </div>
+    <div class="visDiv"></div>
+</div>
+<div id="EmailResult">
+    <div class="dataDiv">
+        <div class="tableDiv"></div>
+        <div class="pages" style="margin-top:5px;margin-bottom:10px;float: right;">
+            <ul class="pagination" style="margin: 0">
+            </ul>
+        </div>
+    </div>
+    <div class="visDiv"></div>
+</div>
+<script src="../javascripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+div#httpResult{
+    width:85%;
+    margin:0 auto;
+}
+div#dnsResult{
+    /*display:none;*/
+    width:85%;
+    margin:0 auto;
+}
+div#IPfiveResult{
+    /*display:none;*/
+    width:85%;
+    margin:0 auto;
+}
+div#EmailResult{
+    /*display: none;*/
+    width:85%;
+    margin:0 auto;
+}
+div.dataDiv{
+    /*border: 1px #ccc solid;*/
+    margin-bottom: 10px;
+    table-layout: fixed;
+    overflow: hidden;
+}
+div.visDiv{
+    border: 1px #ccc solid;
+}
+div.tableDiv{
+overflow-x: auto;
+}
+.navbar-nav:last-child{
+    float:right;
+    color:red;
+}

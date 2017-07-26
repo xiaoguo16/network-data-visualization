@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../styles/correlation.css"/>
+    <script src="../javascripts/d3.min.js"></script>
+    <!--<script src="../javascripts/line.d3.v3.js"></script>-->
+    <title>关联分析</title>
+</head>
+<body>
+<nav class="corHead">
+    <a class="aHead">关联分析</a>
+</nav>
+<div class="main">
+    <div class="left">
+        <div class="condition">
+            <p class="PLeft">初始节点</p>
+            <form>
+                <input type="text" class="form-control" name="inputFir">
+                <input type="button" value="删除" class="btnClear" name="btnClear">
+                <input type="button" value="添加" class="btnAppend" name="btnAppend">
+                <input type="button" value="Start" class="btnStart" name="btnStart">
+            </form>
+        </div>
+    </div>
+    <div class="right">
+        <div class="curCondition">
+            <span>历史分析节点:</span>
+        </div>
+        <div class="selectLayout">
+            <button name="forceButton">力导图</button>
+            <button name="buddleButton">捆图</button>
+        </div>
+        <div class="VisTitle"></div>
+        <div class="corVis"></div>
+        <div class="buddleLay"></div>
+        <div class="selectCircle"></div>
+    </div>
+    <div class="statics">
+        <div class="staticsContent">
+            <p class="Pright">协议数量</p>
+            <div class="protocolWeight">
+            </div>
+            <p class="Pright">IP连接前十位</p>
+            <div class="tenContent">
+                <ul class="tenContentul">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../javascripts/correlation.js"></script>
+</body>
+</html>

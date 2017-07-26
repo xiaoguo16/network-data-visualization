@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索页面</title>
+    <link rel="stylesheet" type="text/css" href="../styles/search.css">
+    <link rel="stylesheet" href="../javascripts/layui/css/layui.css">
+    <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../javascripts/echarts.common.min.js"></script>
+    <style>
+        #start_end input {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+<form method="post" >
+<div class="container_top">
+    <img src="../images/logo.jpg">
+    <div id="search_location">
+        <input type="text" name="location" style="display: none"/>
+        <ul>
+            <!--<li><a  href="#" onclick="changeClass(this)">全部</a></li>-->
+            <!--<li><a  href="#" onclick="changeClass(this)">结构化数据</a></li>-->
+            <!--<li><a  href="#" onclick="changeClass(this)">非结构化数据</a></li>-->
+        </ul>
+    </div>
+        <div id="search">
+            <div class="input">
+                <input type="text" class="input" name="search_content">
+            </div>
+            <div class="button">
+                <input type="button" value="搜索" class="button">
+            </div>
+        </div>
+    <!--<div id="search_type">-->
+        <!--<ul>-->
+            <!--<li><input type="checkbox" checked="checked" name="protocol_type" value="全部">全部</li>-->
+            <!--<li><input type="checkbox" name="protocol_type" value="DNS">DNS</li>-->
+            <!--<li><input type="checkbox" name="protocol_type" value="HTTP">HTTP</li>-->
+            <!--<li><input type="checkbox" name="protocol_type" value="邮件">邮件</li>-->
+            <!--<li><input type="checkbox" name="protocol_type" value="IP五元组">IP五元组</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+    <div id="node">
+        <select name="data_node">
+            <option value="all" selected="selected">全部</option>
+            <option value="collage_a" >南京大学</option>
+            <option value="collage_b">东南大学</option>
+            <option value="collage_c">西安电子科技大学</option>
+        </select>
+    </div>
+    <div id="data_container">
+        <select name="data_container">
+            <option value="cont" selected="selected">全部</option>
+            <option value="cont_1">容器1</option>
+            <option value="cont_2">容器2</option>
+            <option value="cont_3">容器3</option>
+        </select>
+    </div>
+    <div id="time">
+        <select id="time_select"  onchange="hideCalendar()" name="search_time">
+            <option value="all" selected="selected">全部</option>
+            <option value="week" >近一周</option>
+            <option value="month">近一月</option>
+            <option value="half_year">近半年</option>
+            <option value="year">近一年</option>
+            <option value="custom">自定义</option>
+        </select>
+    </div>
+    <div id="start_end" style="display: none">
+        <input placeholder="开始日期" id="start" class="layui-input" name="start_time">至
+        <input placeholder="结束日期" id="end" class="layui-input" name="end_time">
+    </div>
+</div>
+</form>
+<!--<div class="bottom">-->
+    <!--<ul id="selectType">-->
+        <!--<li>数据类型：</li>-->
+        <!--<li><a href="#" onclick="changeSelectClass(this)">All</a> </li>-->
+        <!--<li><a href="#" onclick="changeSelectClass(this)">HTTP</a></li>-->
+        <!--<li><a href="#" onclick="changeSelectClass(this)">DNS</a></li>-->
+        <!--<li><a href="#" onclick="changeSelectClass(this)">IP五元组</a></li>-->
+        <!--<li><a href="#" onclick="changeSelectClass(this)">邮件</a></li>-->
+    <!--</ul>-->
+    <!--<div id="show" >-->
+        <!--<div id="allInfo" class="info">-->
+            <!--<div class="count"></div>-->
+            <!--<div class="vis">-->
+                <!--<div class="visIp"></div>-->
+                <!--<div class="visLoc"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div id="HttpInfo"  class="info">-->
+            <!--<div class="count"></div>-->
+            <!--<div class="vis">-->
+                <!--<div class="visIp"></div>-->
+                <!--<div class="visLoc"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div id="DnsInfo" class="info">-->
+            <!--<div class="count"></div>-->
+            <!--<div class="vis">-->
+                <!--<div class="visIp"></div>-->
+                <!--<div class="visLoc"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div id="IpInfo" class="info">-->
+            <!--<div class="count"></div>-->
+            <!--<div class="vis">-->
+                <!--<div class="visIp"></div>-->
+                <!--<div class="visLoc"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div id="emlInfo" class="info">-->
+            <!--<div class="count"></div>-->
+            <!--<div class="vis">-->
+                <!--<div class="visIp"></div>-->
+                <!--<div class="visLoc"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<script src="../javascripts/search.js"></script>
+<script type="text/javascript" src="../javascripts/layui/layui.js"></script>
+<script>
+    layui.use('laydate',function () {
+        var laydate = layui.laydate;
+        var start = {
+            choose:function (datas) {
+                end.start=datas;
+                end.min = datas;
+            }
+        };
+        var end = {
+            min:laydate.now(),
+            choose:function (datas) {
+                start.max=datas;
+            }
+        };
+        document.getElementById("start").onclick=function () {
+            start.elem=this;
+            laydate(start);
+        };
+        document.getElementById("end").onclick=function () {
+            end.elem=this;
+            laydate(end);
+        }
+    })
+</script>
+</body>
+</html>

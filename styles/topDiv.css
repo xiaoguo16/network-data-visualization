@@ -1,0 +1,122 @@
+table{
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+    margin:0 auto;
+}
+td{
+    /*white-space: nowrap;*/
+    /*overflow:hidden;*/
+    /*text-overflow: ellipsis;*/
+    border-bottom:1px solid #ccc;
+    padding:5px 2px;
+    word-break: break-all;
+    min-width:100px;
+}
+th{
+    border-bottom:1px solid #ccc;
+    padding:10px 0;
+    background-color: #cccccc;
+    text-align: center;
+    word-break: break-all;
+    min-width:100px;
+}
+tr:hover{
+    background-color: #D9D9D9;
+}
+h3{
+    text-align: center;
+}
+
+/*关键词推荐1*/
+#search_result{
+    width: 200px;
+    height: 35px;
+    border: 1px #ccc solid;
+    border-radius: 20px;
+}
+#suggest{
+    text-align: right;
+    margin-right: 20px;
+}
+#suggest ul{
+    list-style-type: none;
+}
+#search_result input{
+    height: 30px;
+    width: 130px;
+    padding: 0;
+    margin: 2px 0 2px 15px;
+    border: 0;
+    font-size: 13px;
+    background-color: white;
+    outline: none;
+}
+#search_result button{
+    border: 0;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 2px 7px 0 0;
+    outline: none;
+    background-color: white;
+}
+#suggestUl li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+/*email关键词推荐*/
+#search_resultEmail{
+    width: 200px;
+    height: 35px;
+    border: 1px #ccc solid;
+    border-radius: 20px;
+}
+#search_resultEmail input{
+    height: 30px;
+    width: 130px;
+    padding: 0;
+    margin: 2px 0 2px 15px;
+    border: 0;
+    font-size: 13px;
+    background-color: white;
+    outline: none;
+}
+#search_resultEmail button{
+    border: 0;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 2px 7px 0 0;
+    outline: none;
+    background-color: white;
+}
+#suggestEmail{
+    display: none;
+}
+#suggestEmail li{
+    display: inline-block;
+    margin-right: 20px;
+}
+/*当前检索条件复选框*/
+div#curCondition{
+    font-size: 1.1em;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+div#curCondition form{
+    display: inline-block;
+}
+div#curCondition input[type="checkbox"]{
+    margin:0 20px 0 5px;
+}
+button.curBtn{
+    height: 27px;
+    width:70px;
+    background-color: #B2B2B2;
+    border-radius: 15px;
+    color:white;
+    border-style:none;
+    outline:none;
+}

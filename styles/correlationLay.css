@@ -1,0 +1,165 @@
+/*标题栏样式*/
+nav.corHead{
+    height:40px;
+    background-color: #222222;
+}
+/*标题栏文字样式*/
+a.aHead{
+    color:#ffffff;
+    font-size: 1.6em;
+    padding-left: 20px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+/*div布局*/
+html,body{
+    height: 100%;
+}
+div.main{
+    /*height:99%;*/
+    height: calc(100% - 40px);
+}
+/*左侧的输入框*/
+div.left{
+    width:11%;
+    float: left;
+    background-color: #cccccc;
+    height:100%;
+}
+/*中间的可视化部分*/
+div.right{
+    width:78%;
+    float: left;
+    height:100%;
+}
+/*a标签链接Div*/
+div.curCondition{
+   margin-left:20px;
+    margin-top:10px;
+    font-size: 1.1em;
+}
+div.curCondition a{
+    padding-right: 10px;
+    cursor: pointer;
+}
+/*最右侧的统计图表*/
+div.statics{
+    width:11%;
+    /*width:150px;*/
+    background-color: #d9d9d9;
+    float: left;
+    height:100%;
+}
+div.protocolWeight{
+    color:#777;
+}
+div.staticsContent{
+    margin:50px 10px 0 20px;
+}
+div.tenContent ul{
+    list-style-type: none;
+    padding: 0;
+    color: #777;
+}
+div.tenContent ul li{
+    padding-bottom: 2px;
+}
+div.condition{
+    margin:50px 10px 0 10px;
+}
+div.corVis{
+    width:100%;
+    height: calc(100% - 120px);
+}
+div.buddleLay{
+    width:100%;
+    height:calc(100% - 50px);
+    display:none;
+}
+div.selectCircle{
+    position:absolute;
+    width:200px;
+    height:200px;
+    display: none;
+}
+div.VisTitle{
+    height: 50px;
+}
+div.selectLayout{
+    padding:10px 10px;
+    display:none;
+}
+/*布局选择按钮*/
+.buttonBefore{
+    width: 70px;
+    height: 30px;
+    margin-right: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #bdbdbd;
+    color:white;
+    outline:none;
+}
+.buttonSelected{
+    width: 70px;
+    height: 30px;
+    margin-right: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color:#999999;
+    color:white;
+    outline:none;
+}
+/*左侧边框中的字体样式*/
+p.PLeft{
+    color:#ffffff;
+    font-size: 1.2em;
+}
+p.Pright{
+    color:#ffffff;
+    font-size: 1.2em;
+}
+/*左侧div中的输入框样式*/
+.form-control{
+    background-color: #bbbbbb;
+    height:25px;
+    width:70%;
+    float:left;
+    margin-bottom:8px;
+    font-size: 0.5em;
+}
+/*左侧div中的按钮样式*/
+.btnClear{
+    height: 25px;
+    width:28%;
+    float:right;
+    background-color: #999999;
+    border:none;
+    border-radius: 3px;
+    font-size: 0.5em;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+/*添加按钮*/
+.btnAppend{
+    height: 25px;
+    width:50%;
+    background-color: #999999;
+    border:none;
+    border-radius: 3px;
+    font-size: 0.5em;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+/*开始按钮*/
+.btnStart{
+    height: 25px;
+    width:50%;
+    background-color: #999999;
+    border:none;
+    border-radius: 3px;
+    font-size: 0.5em;
+    color: #ffffff;
+    margin-bottom: 8px;
+}

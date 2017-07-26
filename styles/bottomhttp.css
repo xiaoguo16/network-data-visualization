@@ -1,0 +1,28 @@
+div#httplineDiv{
+    height:300px;
+    width: 90%;
+    margin:0 auto;
+}
+div#httpClientDiv{
+    height:300px;
+    width:90%;
+    margin:0 auto;
+}
+div#httpServerDiv{
+    height:300px;
+    width:90%;
+    margin:0 auto;
+}
+div#httpsPortDiv{
+    height:300px;
+    display:inline-block;
+    float:left;
+    width:50%;
+    margin:0 auto;
+}
+div#httpdPortDiv{
+    height:300px;
+    width:50%;
+    margin:0 auto;
+    display:inline-block;
+}

@@ -1,0 +1,29 @@
+
+div#dnslineDiv{
+    height:300px;
+    width: 90%;
+    margin:0 auto;
+}
+div#dnsClientDiv{
+    height:300px;
+    width:90%;
+    margin:0 auto;
+}
+div#dnsServerDiv{
+    height:300px;
+    width:90%;
+    margin:0 auto;
+}
+div#dnsHostipDiv{
+    height:300px;
+    display:inline-block;
+    float:left;
+    width:50%;
+    margin:0 auto;
+}
+div#dnsBlackdomainDiv{
+    height:300px;
+    width:50%;
+    margin:0 auto;
+    display:inline-block;
+}

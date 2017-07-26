@@ -1,0 +1,29 @@
+
+div#EmailLineDiv{
+    height:300px;
+    width: 90%;
+    margin:0 auto;
+}
+div#EmailSipDiv{
+    height:300px;
+    width:90%;
+    margin:0 auto;
+}
+div#EmailDipDiv{
+    height:300px;
+    width:90%;
+    margin:0 auto;
+}
+div#EmailFromDiv{
+    height:300px;
+    display:inline-block;
+    float:left;
+    width:50%;
+    margin:0 auto;
+}
+div#EmailToDiv{
+    height:300px;
+    width:50%;
+    margin:0 auto;
+    display:inline-block;
+}

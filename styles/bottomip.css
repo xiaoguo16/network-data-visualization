@@ -1,0 +1,29 @@
+
+div#iplineDiv{
+    height:300px;
+    width: 90%;
+    margin:0 auto;
+}
+div#ipSipDiv{
+    height:300px;
+    width:90%;
+    margin:0 auto;
+}
+div#ipDipDiv{
+    height:300px;
+    width:90%;
+    margin:0 auto;
+}
+div#ipSportDiv{
+    height:300px;
+    display:inline-block;
+    float:left;
+    width:50%;
+    margin:0 auto;
+}
+div#ipDportDiv{
+    height:300px;
+    width:50%;
+    margin:0 auto;
+    display:inline-block;
+}
