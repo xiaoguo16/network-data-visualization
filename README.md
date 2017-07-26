@@ -10,7 +10,7 @@ network-flow-data-visualization
      用户可键入IP地址，点击start按钮进行该IP的分析；
      也可以通过键入多个IP查看这些IP是否有关联；
      目前支持的图形有力导图和捆图，结果如下：
-![力导图](https://github.com/xiaoguo16/network-data-visualization/resultPics/correlation1.png")   
+![力导图](https://github.com/xiaoguo16/network-data-visualization/blob/master/resultPics/correlation1.png")   
 ![捆图](https://github.com/xiaoguo16/network-data-visualization/resultPics/correlation2.png")  
 ### IP分布
      用户可以查看所有IP的分布的地理位置。
