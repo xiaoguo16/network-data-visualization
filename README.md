@@ -12,13 +12,13 @@ network-flow-data-visualization
      目前支持的图形有力导图和捆图，结果如图2，3：
 ### IP分布
      用户可以查看所有IP的分布的地理位置，结果如图4。
-##### 图1
+##### 图1：
 ![一键搜索结果](https://github.com/xiaoguo16/network-data-visualization/blob/master/resultPics/searchResult.png)  
-##### 图2   
+##### 图2： 
 ![力导图](https://github.com/xiaoguo16/network-data-visualization/blob/master/resultPics/correlation1.png)  
-##### 图3
+##### 图3：
 ![捆图](https://github.com/xiaoguo16/network-data-visualization/blob/master/resultPics/correlation2.png)  
-##### 图4
+##### 图4：
 ![IP分布](https://github.com/xiaoguo16/network-data-visualization/blob/master/resultPics/IP.png)  
 
 
